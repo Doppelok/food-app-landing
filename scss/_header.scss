@@ -1,0 +1,32 @@
+.header {
+  padding: 26px 16px 26px 46px;
+  background-color: var(--color-white);
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+
+  &__list {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      align-items: center;
+      gap: 94px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    transition: color .3s;
+
+    &:hover {
+      color: var(--color-orange);
+    }
+  }
+}

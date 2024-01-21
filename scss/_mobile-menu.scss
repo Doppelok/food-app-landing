@@ -1,0 +1,35 @@
+.mobile-menu {
+  background-color: transparent;
+  fill: var(--color-normal);
+  border: none;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: none;
+  }
+}
+
+.mobile-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: var(--color-mobile-light);
+  transform: translateX(100%);
+  transition: transform 0.3s;
+  padding: 40px 24px 0;
+}
+
+.is-open {
+  transform: translateX(0);
+}
+
+.menu-btn-close {
+  position: absolute;
+  top: 60px;
+  right: 36px;
+  background-color: transparent;
+  fill: var(--color-normal);
+  border: none;
+}

@@ -1,0 +1,24 @@
+.download-section {
+  background-color: var(--color-dark);
+  padding-top: 146px;
+  padding-bottom: 131px;
+
+  @media screen and (min-width: $bp-tablet) {
+    background-image: url("../images/download.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    color: var(--color-white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+  }
+
+  &__text {
+    color: var(--color-white);
+    letter-spacing: 0.2px;
+  }
+}

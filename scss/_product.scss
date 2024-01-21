@@ -1,0 +1,92 @@
+.product-section {
+  height: 1113px;
+  //background-image: url("../images/hero-background.jpg");
+  //background-size: cover;
+  //background-repeat: no-repeat;
+}
+
+.product-bg {
+  background-image: var(--color-mobile-light);
+
+  @media screen and (min-width: $bp-tablet) {
+    background-image: url("../images/hero-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.product-container {
+  position: relative;
+  padding-top: 73px;
+  padding-bottom: 146px;
+
+  &::after {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    background-image: url("../images/hero-phone-mobile.png");
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 366px;
+
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      top: 128%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+      content: "";
+      background-image: url("../images/hero-phone.png");
+      background-repeat: no-repeat;
+      width: 648px;
+      height: 640px;
+    }
+  }
+
+  &__hero-text {
+    color: var(--color-normal);
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    margin-bottom: 17px;
+    font-size: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      color: var(--color-white);
+      font-size: 24px;
+    }
+  }
+
+  &__hero-title {
+    display: block;
+    margin: 0 auto 27px;
+    color: var(--color-dark);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.2px;
+    width: 100%;
+    max-width: 391px;
+
+    @media screen and (min-width: $bp-tablet) {
+      color: var(--color-white);
+      font-size: 58px;
+      letter-spacing: 0.2px;
+      max-width: 937px;
+    }
+  }
+
+  &__text {
+    color: var(--color-normal);
+    letter-spacing: 0.2px;
+    margin: 0 auto 50px;
+    width: 100%;
+    max-width: 342px;
+
+    @media screen and (min-width: $bp-tablet) {
+      color: var(--color-secondary-white);
+      letter-spacing: 0.2px;
+      margin-bottom: 54px;
+      max-width: 551px;
+    }
+  }
+}
